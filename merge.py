@@ -56,7 +56,7 @@ def main(args):
     print(f"Saving... / 保存しています...")
 
     save_model(
-        {"emb_params": merged_model, "device": "cpu"},
+        {"emb_params": merged_model},
         output_path,
     )
 

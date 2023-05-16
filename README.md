@@ -1,6 +1,6 @@
 # sd_ti_merge
 
-Stable Diffusion の Textual Inversion 埋め込みをマージします。
+Stable Diffusion の Textual Inversion 埋め込みをマージできます。
 
 ## マージスクリプト
 
@@ -39,6 +39,7 @@ Model: {'emb_params': tensor([[-0.0165,  0.0029,  0.0104,  ...,  0.0131, -0.0015
         [-0.0136, -0.0096,  0.0006,  ...,  0.0080,  0.0124,  0.0089],
         [-0.0094, -0.0046,  0.0009,  ...,  0.0137,  0.0160,  0.0206]])}
 Token size: 16 tokens
+Dimension: 1024 (SDv2.x)
 ```
 
 のように出てきます。`Token size` で示されているのがそのモデルのトークンサイズであり、これが一致しないモデル同士はマージできません。

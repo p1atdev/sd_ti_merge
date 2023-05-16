@@ -14,6 +14,16 @@ def main(args):
 
     print(f"Token size: {params.shape[0]} tokens")
 
+    dim = params.shape[1]
+
+    if dim == 768:
+        model = "SDv1.x"
+    elif dim == 1024:
+        model = "SDv2.x"
+    else:
+        model = "Unknown"
+    print(f"Dimension: {dim} ({model})")
+
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
